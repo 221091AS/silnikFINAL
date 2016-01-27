@@ -6,3 +6,4 @@ c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelero
 c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\bin\Release\Sterownik silnika z akcelerometrem.pdb
 c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.exe
 c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.pdb
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.csprojResolveAssemblyReference.cache

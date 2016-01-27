@@ -14,8 +14,8 @@ namespace Sterownik_silnika_z_akcelerometrem
   
     public partial class Sterownik : Form
     {
-         private SerialPort portCOM;
-         private string data;
+         private SerialPort portCOM; //port szeregowy
+         private string data; // string na dane
 
         public Sterownik()
         {
@@ -36,13 +36,13 @@ namespace Sterownik_silnika_z_akcelerometrem
             var ports = SerialPort.GetPortNames();
             comboBox1.DataSource = ports;
             
-
+            // inicjalizacja portu i populacja comboboxa z nazwami portow
          
         }
 
         private void portCOM_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            this.Invoke(new EventHandler(komunikacja_TextChanged));
+            this.Invoke(new EventHandler(komunikacja_TextChanged));   //strategia dzialania podczas odbioru danych
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Sterownik_silnika_z_akcelerometrem
         {
             
             
-            komunikacja.Text = data;
+            komunikacja.Text = data;  //tu wpisane sa dane z arduina komunikacja jest tym oknem tekstowym
         }
 
         private void inicjalizuj_Click(object sender, EventArgs e)
@@ -82,9 +82,9 @@ namespace Sterownik_silnika_z_akcelerometrem
                     komunikacja.Text = "";
                     
                 }
-                portCOM.Write("a");
-                data = portCOM.ReadLine();
-                
+                portCOM.Write("a"); //wpisz do portu szeregowego a aby sprawdzic dzialanie
+                data = portCOM.ReadLine(); // odczytaj odpowiedz z arduina
+                //tutaj jest procedura otwarcia portu sprobuj - wylap, czasem moze sie nie otworzyc zapierwszym razem wiec proba otwarcia do skutku
             }
         
 
@@ -109,7 +109,7 @@ namespace Sterownik_silnika_z_akcelerometrem
                 numericUpDown1.Value = 5;
                 MessageBox.Show("Zakres predkosci wyrazany jest w przedziale 1 do 5");
             
-            }
+            }//prosta konstrukcja z if ograniczajaca wartosci z okien wybierania predkosci i krokow
         }
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace Sterownik_silnika_z_akcelerometrem
                 numericUpDown2.Value = 5;
                 MessageBox.Show("Zakres krokow wyrazany jest w przedziale 1 do 5");
 
-            }
+            }//prosta konstrukcja z if ograniczajaca wartosci z okien wybierania predkosci i krokow
         }
 
         private void label7_Click_1(object sender, EventArgs e)
@@ -140,20 +140,20 @@ namespace Sterownik_silnika_z_akcelerometrem
         private void pozycjaX_Click(object sender, EventArgs e)
         {
             portCOM.Write("x");
-            axisx.Text = portCOM.ReadLine();
+            axisx.Text = portCOM.ReadLine();  //wysylasz x na port szeregowy, czytasz odbior z niego
         }
 
         private void PozycjaY_Click(object sender, EventArgs e)
         {
 
-            portCOM.Write("y");
+            portCOM.Write("y");//wysylasz y na port szeregowy, czytasz odbior z niego
             axisy.Text = portCOM.ReadLine();
         }
 
         private void PozycjaZ_Click(object sender, EventArgs e)
         {
 
-            portCOM.Write("z");
+            portCOM.Write("z");//wysylasz z na port szeregowy, czytasz odbior z niego
             axisz.Text = portCOM.ReadLine();
         }
 
@@ -203,7 +203,7 @@ namespace Sterownik_silnika_z_akcelerometrem
             if (numericUpDown2.Value == 5)
             {
                 portCOM.Write("k");
-                data = portCOM.ReadLine();
+                data = portCOM.ReadLine(); //prosta konstrukcja if ze po wyborze takiego trybu jest wysylana okreslona litera na port i odczytywana z niego odpowiedz potem
             }
         }
     }
