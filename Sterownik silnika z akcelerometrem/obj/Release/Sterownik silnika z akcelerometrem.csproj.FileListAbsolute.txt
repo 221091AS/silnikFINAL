@@ -1,0 +1,8 @@
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\bin\Release\Sterownik silnika z akcelerometrem.exe.config
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik_silnika_z_akcelerometrem.Sterownik.resources
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik_silnika_z_akcelerometrem.Properties.Resources.resources
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.csproj.GenerateResource.Cache
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\bin\Release\Sterownik silnika z akcelerometrem.exe
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\bin\Release\Sterownik silnika z akcelerometrem.pdb
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.exe
+c:\users\adam\documents\visual studio 2013\Projects\Sterownik silnika z akcelerometrem\Sterownik silnika z akcelerometrem\obj\Release\Sterownik silnika z akcelerometrem.pdb
